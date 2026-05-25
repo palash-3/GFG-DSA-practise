@@ -7,7 +7,7 @@ def add_to_array(arr):
         number = number*10+i
     
     number+=1
-    return number
+    print(number)
 
-print(add_to_array(arr))
+    add_to_array(arr)
 
