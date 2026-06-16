@@ -1,7 +1,8 @@
 arr = [6, 4, 2, -2, 5, 3, 2, 2, -1, -1, 4]
 
 def local_min_max(arr):
-    flag = None
+    
+    
     n = len(arr)
     temp =[]
     temp.append(arr[0])
