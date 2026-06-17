@@ -1,25 +1,13 @@
-def searchInsertK(arr, k):  
-    left, right = 0, len(arr) - 1  
-    while left <= right:  
-        mid = left + (right - left) // 2  
-        
-        # if k is found at mid
-        if arr[mid] == k:  
-            return mid  
+arr = [1, 3, 5, 6]
+k = 2
 
-        # if k is smaller, search in left half
-        elif arr[mid] > k:  
-            right = mid - 1  
+def insert_k(arr, k):
+    n = len(arr)
+    
+    for i in range(n):
+        if k <= arr[i]:
+            return i
+    return -1
 
-        # if k is larger, search in right half
-        else:  
-            left = mid + 1  
-
-    # if k is not found, return insert position
-    return left  
-
-if __name__ == "__main__":  
-
-    arr = [1, 3, 5, 6]  
-    k = 5  
-    print(searchInsertK(arr, k))
+idx = insert_k(arr, k)
+print(idx)
