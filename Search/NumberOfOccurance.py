@@ -1,6 +1,6 @@
 # arr = [1, 1, 2, 2, 2, 2, 3]
 # target = 2
-arr = [1, 1, 2, 2, 2, 2, 3]
+arr = [2, 5]
 target = 5
 
 def number_of_occurance(arr, k):
